@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link href="<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+</head>
+<style>
+html{
+	font-family: 'Fira Sans', sans-serif;
+}
+body{
+	display: grid;
+	grid-template-columns: 200px auto;
+	grid-template-rows: 100px auto;
+}
+.title{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	display:flex;
+	justify-content: center;
+}
+.sidebar{
+	background-color: lightgray;
+}
+.content{
+	padding:1em;
+}
+
+@media not all and (hover){
+	 /*moblie layout*/
+	 .sidebar, .content{
+	 	grid-column-start: 1;
+	 	grid-column-end: 3;
+	 }
+	 h1{
+	 	font-size: 400%;
+	 }
+	 body{
+	 	grid-template-rows: 200px auto auto;
+	 }
+	 .sidebar {
+	 	display:flex;
+	 	justify-content: center;
+	 	font-size: 180%;
+	 }
+	 ul{
+	 	list-style: none;
+	 	margin-left: -20px;
+	 }
+}
+</style>
+<body>
+	<div class="title">
+		<h1>Yuri Kawada</h1>
+	</div>
+	<div class="sidebar">
+		<ul>
+			<li>star</li>
+			<li>shopping</li>
+			<li>music</li>
+			<li>sleeping</li>
+			<li>eating</li>
+			<li>netflix</li>
+		</ul>
+	</div>
+	<div class="content">
+		<h3>Yo</h3>
+		<p>words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words </p>
+	</div>
+</body>
+</html>

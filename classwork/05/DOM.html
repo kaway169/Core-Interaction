@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+
+console.log(document);
+
+document.body.style.backgroundColor = "red";
+
+//create an html element
+var header = document.createElement("h1");
+console.log(header);
+
+//put it on the page
+document.body.appendChild(header);
+
+//inner HTML is the sapce between opening and closing tags...property inside of header
+header.innerHTML = "Yuri";
+
+var image = document.createElement("img");
+document.body.appendChild(image);
+//bad code
+//image.src = "hello.gif";
+//good code
+image.setAttribute("src", "hello.gif");
+
+</script>
+</body>
+</html>
